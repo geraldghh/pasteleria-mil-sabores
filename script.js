@@ -39,7 +39,6 @@ function validarCorreo(correo) {
 
 document.addEventListener("DOMContentLoaded", () => {
     actualizarContador();
-
     // Eventos para añadir al carrito desde catálogo
     document.querySelectorAll(".btn-anadir").forEach(boton => {
         boton.addEventListener("click", (e) => {

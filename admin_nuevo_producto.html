@@ -42,12 +42,17 @@
             <input type="number" id="stock-critico" min="0">
 
             <label>Categoría:</label>
-            <select id="categoria-prod" required>
-                <option value="">Seleccione...</option>
-                <option value="cuadradas">Tortas Cuadradas</option>
-                <option value="circulares">Tortas Circulares</option>
-                <option value="individuales">Postres Individuales</option>
-            </select>
+                <select id="categoria-prod" name="categoria" required>
+                    <option value="">Seleccione...</option>
+                    <option value="cuadradas">Tortas Cuadradas</option>
+                    <option value="circulares">Tortas Circulares</option>
+                    <option value="individuales">Postres Individuales</option>
+                    <option value="sin_azucar">Productos Sin Azúcar</option>
+                    <option value="tradicional">Pastelería Tradicional</option>
+                    <option value="sin_gluten">Productos Sin Gluten</option>
+                    <option value="vegana">Productos Veganos</option>
+                    <option value="especiales">Tortas Especiales</option>
+                </select>
 
             <label>Imagen (Opcional):</label>
             <input type="file" id="imagen-prod" accept="image/*">
