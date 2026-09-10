@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Pastelería Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Productos</h1>
+        <p>Descubre, saborea y crea momentos inolvidables con nosotros.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="registro.html">Registro y Promociones</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Sección de Origen (Requerimiento de Información Extra) -->
+        <section id="origen-productos">
+            <h2>Origen de Nuestros Productos</h2>
+            <p>Nuestras recetas tradicionales mantienen la esencia de la repostería chilena, utilizando ingredientes locales de alta calidad para honrar nuestros 50 años de historia.</p>
+        </section>
+
+        <!-- Filtros de Búsqueda Avanzada -->
+        <section id="filtros">
+            <h2>Filtros de Búsqueda</h2>
+            <form id="formFiltros">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="todas">Todas las Categorías</option>
+                    <option value="cuadradas">Tortas Cuadradas</option>
+                    <option value="circulares">Tortas Circulares</option>
+                    <option value="individuales">Postres Individuales</option>
+                    <option value="sin_azucar">Productos Sin Azúcar</option>
+                    <option value="tradicional">Pastelería Tradicional</option>
+                    <option value="sin_gluten">Productos Sin Gluten</option>
+                    <option value="vegana">Productos Veganos</option>
+                    <option value="especiales">Tortas Especiales</option>
+                </select>
+                <button type="button">Aplicar Filtros</button>
+            </form>
+        </section>
+
+        <!-- Catálogo Extenso de Productos -->
+        <section id="lista-productos">
+            <h2>Nuestras Delicias</h2>
+
+            <!-- Tortas Cuadradas -->
+            <article class="producto">
+                <h3>Torta Cuadrada de Chocolate (TC001)</h3>
+                <p>Deliciosa torta de chocolate con capas de ganache y un toque de avellanas. Personalizable con mensajes especiales.</p>
+                <strong>Precio: $45.000 CLP</strong>
+                <label>Mensaje personalizado: <input type="text" placeholder="Ej: Feliz Aniversario"></label>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <article class="producto">
+                <h3>Torta Cuadrada de Frutas (TC002)</h3>
+                <p>Una mezcla de frutas frescas y crema chantilly sobre un suave bizcocho de vainilla, ideal para celebraciones.</p>
+                <strong>Precio: $50.000 CLP</strong>
+                <label>Mensaje personalizado: <input type="text" placeholder="Ej: Felicidades"></label>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <!-- Tortas Circulares -->
+            <article class="producto">
+                <h3>Torta Circular de Vainilla (TT001)</h3>
+                <p>Bizcocho de vainilla clásico relleno con crema pastelera y cubierto con un glaseado dulce, perfecto para cualquier ocasión.</p>
+                <strong>Precio: $40.000 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <article class="producto">
+                <h3>Torta Circular de Manjar (TT002)</h3>
+                <p>Torta tradicional chilena con manjar y nueces, un deleite para los amantes de los sabores dulces y clásicos.</p>
+                <strong>Precio: $42.000 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <!-- Postres Individuales -->
+            <article class="producto">
+                <h3>Mousse de Chocolate (P1001)</h3>
+                <p>Postre individual cremoso y suave, hecho con chocolate de alta calidad.</p>
+                <strong>Precio: $5.000 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <article class="producto">
+                <h3>Tiramisú Clásico (P1002)</h3>
+                <p>Un postre italiano individual con capas de café, mascarpone y cacao.</p>
+                <strong>Precio: $5.500 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <!-- Productos Sin Azúcar -->
+            <article class="producto">
+                <h3>Torta Sin Azúcar de Naranja (PSA001)</h3>
+                <p>Torta ligera y deliciosa, endulzada naturalmente.</p>
+                <strong>Precio: $48.000 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <article class="producto">
+                <h3>Cheesecake Sin Azúcar (PSA002)</h3>
+                <p>Suave y cremoso, una opción perfecta para disfrutar sin culpa.</p>
+                <strong>Precio: $47.000 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <!-- Pastelería Tradicional -->
+            <article class="producto">
+                <h3>Empanada de Manzana (PT001)</h3>
+                <p>Pastelería tradicional rellena de manzanas especiadas.</p>
+                <strong>Precio: $3.000 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <article class="producto">
+                <h3>Tarta de Santiago (PT002)</h3>
+                <p>Tradicional tarta española hecha con almendras, azúcar, y huevos.</p>
+                <strong>Precio: $6.000 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <!-- Productos Sin Gluten -->
+            <article class="producto">
+                <h3>Brownie Sin Gluten (PG001)</h3>
+                <p>Rico y denso, ideal para quienes evitan el gluten sin sacrificar sabor.</p>
+                <strong>Precio: $4.000 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <article class="producto">
+                <h3>Pan Sin Gluten (PG002)</h3>
+                <p>Suave y esponjoso, ideal para sandwiches.</p>
+                <strong>Precio: $3.500 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <!-- Productos Veganos -->
+            <article class="producto">
+                <h3>Torta Vegana de Chocolate (PV001)</h3>
+                <p>Torta de chocolate húmeda y deliciosa, sin productos de origen animal.</p>
+                <strong>Precio: $50.000 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <article class="producto">
+                <h3>Galletas Veganas de Avena (PV002)</h3>
+                <p>Crujientes y sabrosas, una excelente opción para un snack saludable.</p>
+                <strong>Precio: $4.500 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <!-- Tortas Especiales -->
+            <article class="producto">
+                <h3>Torta Especial de Cumpleaños (TE001)</h3>
+                <p>Diseñada para celebraciones, personalizable con decoraciones y mensajes únicos.</p>
+                <strong>Precio: $55.000 CLP</strong>
+                <label>Mensaje personalizado: <input type="text" placeholder="Ej: Feliz Cumpleaños"></label>
+                <button>Agregar al Carrito</button>
+            </article>
+
+            <article class="producto">
+                <h3>Torta Especial de Boda (TE002)</h3>
+                <p>Elegante y deliciosa, diseñada para ser el centro de atención en cualquier boda.</p>
+                <strong>Precio: $60.000 CLP</strong>
+                <button>Agregar al Carrito</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ubicación: Región Metropolitana, Chile</p>
+        <p>Impacto Comunitario: Al comprar con nosotros, apoyas directamente a los estudiantes de gastronomía de Duoc UC y a la comunidad local.</p>
+        <p>&copy; 2026 Pastelería Mil Sabores. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
