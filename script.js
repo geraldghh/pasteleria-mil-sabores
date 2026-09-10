@@ -107,4 +107,42 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Mensaje enviado correctamente a Pastelería Mil Sabores.");
         });
     }
+
+
+
+    // Validación de Nuevo Producto (Control de Stock Crítico)
+    const formNuevoProducto = document.getElementById("form-nuevo-producto");
+    if (formNuevoProducto) {
+        formNuevoProducto.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const stock = parseInt(document.getElementById("stock-prod").value);
+            // Si el campo de stock crítico está vacío, se asume 0 para no romper la lógica
+            const stockCritico = parseInt(document.getElementById("stock-critico").value) || 0;
+
+            if (stock <= stockCritico) {
+                alert("⚠️ ALERTA: El stock ingresado es igual o inferior al nivel crítico definido.");
+            } else {
+                alert("Producto guardado exitosamente en el catálogo.");
+            }
+        });
+    }
+
+    // Validación de Nuevo Usuario (Formato de RUN estricto)
+    const formNuevoUsuario = document.getElementById("form-nuevo-usuario");
+    if (formNuevoUsuario) {
+        formNuevoUsuario.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const run = document.getElementById("run-user").value;
+
+            // Expresión regular: permite solo números y opcionalmente la letra K al final, bloqueando cualquier otro símbolo
+            const regexRun = /^[0-9]+[kK]?$/;
+
+            if (!regexRun.test(run)) {
+                alert("Error: El RUN debe ingresarse estrictamente sin puntos ni guion (Ej: 19011022K).");
+                return;
+            }
+
+            alert("Usuario creado y rol asignado correctamente en el sistema.");
+        });
+    }
 });

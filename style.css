@@ -196,3 +196,25 @@ article img {
     flex: 1; /* Le indica al contenido que ocupe todo el espacio restante de la pantalla */
     padding: 30px;
 }
+.info-tienda {
+    text-align: center;
+}
+
+.btn-enlace {
+    display: inline-block;
+    background-color: #8B4513;
+    color: #FFF5E1;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-enlace:hover {
+    background-color: #FFC0CB;
+    color: #5D4037;
+}

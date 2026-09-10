@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Producto - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-layout">
+    <aside class="sidebar">
+        <div class="brand"><h2>¡HOLA Administrador!</h2></div>
+        <nav class="menu-vertical">
+            <ul>
+                <li><a href="admin_home.html">🏠 Dashboard</a></li>
+                <li><a href="admin_productos.html">🍰 Listado Productos</a></li>
+                <li><a href="admin_nuevo_producto.html">➕ Nuevo Producto</a></li>
+                <li><a href="admin_usuarios.html">👥 Listado Usuarios</a></li>
+                <li><a href="admin_nuevo_usuario.html">➕ Nuevo Usuario</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="admin-content">
+        <h1>Crear Nuevo Producto</h1>
+        <form id="form-nuevo-producto">
+            <label>Código producto:</label>
+            <input type="text" id="codigo-prod" minlength="3" required>
+
+            <label>Nombre:</label>
+            <input type="text" id="nombre-prod" maxlength="100" required>
+
+            <label>Descripción (Opcional):</label>
+            <textarea id="desc-prod" maxlength="500"></textarea>
+
+            <label>Precio:</label>
+            <input type="number" id="precio-prod" min="0" step="0.01" required>
+
+            <label>Stock:</label>
+            <input type="number" id="stock-prod" min="0" required>
+
+            <label>Stock Crítico (Alerta):</label>
+            <input type="number" id="stock-critico" min="0">
+
+            <label>Categoría:</label>
+            <select id="categoria-prod" required>
+                <option value="">Seleccione...</option>
+                <option value="cuadradas">Tortas Cuadradas</option>
+                <option value="circulares">Tortas Circulares</option>
+                <option value="individuales">Postres Individuales</option>
+            </select>
+
+            <label>Imagen (Opcional):</label>
+            <input type="file" id="imagen-prod" accept="image/*">
+
+            <button type="submit" style="margin-top: 15px;">Guardar Producto</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
