@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Producto - Pastelería Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-principal">
+        <div class="logo-container"><span>Pastelería Mil Sabores</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">🛒 Cart (<span id="contador-carrito">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p class="breadcrumb"><a href="index.html">Home</a> > <a href="productos.html">Categoría</a> > Torta Cuadrada de Chocolate</p>
+        
+        <section class="detalle-principal">
+            <div class="imagen-producto">
+                <img src="imagenes/torta-chocolate.jpg" alt="Torta Cuadrada de Chocolate">
+                <div class="galeria-miniatura">
+                    <img src="imagenes/torta-chocolate.jpg" alt="Miniatura 1">
+                    <img src="imagenes/torta-chocolate-2.jpg" alt="Miniatura 2">
+                </div>
+            </div>
+            <div class="info-producto">
+                <h1>Torta Cuadrada de Chocolate</h1>
+                <h2 class="precio-detalle">$45.000 CLP</h2>
+                <p>Deliciosa torta de chocolate con capas de ganache y un toque de avellanas. Personalizable con mensajes especiales.</p>
+                <div class="acciones-compra">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" value="1" min="1">
+                    <button id="btn-anadir-carrito">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="productos-relacionados">
+            <h2>Related Products</h2>
+            <div class="grilla-relacionados">
+                <!-- Tarjetas de productos relacionados -->
+                <article class="producto-card">
+                    <img src="imagenes/torta-vainilla.jpg" alt="Relacionado 1">
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

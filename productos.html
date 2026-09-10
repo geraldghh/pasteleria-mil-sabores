@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Pastelería Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-principal">
+        <!-- Misma navegación que index.html para consistencia -->
+        <div class="logo-container"><span>Pastelería Mil Sabores</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="carrito-icono">
+            <a href="carrito.html">🛒 Cart (<span id="contador-carrito">0</span>)</a>
+        </div>
+    </header>
+
+    <main>
+        <h1 style="text-align: center;">PRODUCTOS</h1>
+        <section class="grilla-productos-completa" id="contenedor-productos">
+            <!-- Los productos se generarán dinámicamente o se maquetan aquí -->
+            <article class="producto-card">
+                <a href="detalle_producto.html?id=TC001">
+                    <img src="imagenes/torta-chocolate.jpg" alt="Torta Chocolate">
+                </a>
+                <h3><a href="detalle_producto.html?id=TC001">Torta Cuadrada de Chocolate</a></h3>
+                <strong>$45.000</strong>
+                <button class="btn-anadir" data-id="TC001">Añadir al carrito</button>
+            </article>
+            <!-- Añadir más productos según las 8 categorías -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pastelería Mil Sabores</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Admin Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-layout">
+    <aside class="sidebar">
+        <!-- Mismo menú vertical que admin_home.html -->
+        <div class="brand"><h2>¡HOLA Administrador!</h2></div>
+        <nav class="menu-vertical">
+            <ul>
+                <li><a href="admin_home.html">🏠 Dashboard</a></li>
+                <li><a href="admin_productos.html">🍰 Listado Productos</a></li>
+                <li><a href="admin_nuevo_producto.html">➕ Nuevo Producto</a></li>
+                <li><a href="admin_usuarios.html">👥 Listado Usuarios</a></li>
+                <li><a href="admin_nuevo_usuario.html">➕ Nuevo Usuario</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="admin-content">
+        <div class="encabezado-tabla">
+            <h1>Gestión de Productos</h1>
+            <a href="admin_nuevo_producto.html"><button>+ Agregar Producto</button></a>
+        </div>
+        
+        <table class="tabla-admin">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TC001</td>
+                    <td>Torta Cuadrada de Chocolate</td>
+                    <td>Tortas Cuadradas</td>
+                    <td>$45.000</td>
+                    <td>15</td>
+                    <td><button>Editar</button> <button>Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>P1001</td>
+                    <td>Mousse de Chocolate</td>
+                    <td>Postres Individuales</td>
+                    <td>$5.000</td>
+                    <td>30</td>
+                    <td><button>Editar</button> <button>Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

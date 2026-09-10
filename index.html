@@ -3,46 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastelería Mil Sabores - Inicio</title>
-    <!-- Enlace a la hoja de estilos externa (Etapa 3) -->
-    <link rel="stylesheet" href="style.css"> 
+    <title>Home - Pastelería Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Logo de Pastelería Mil Sabores">
-        <h1>Pastelería Mil Sabores</h1>
-        <p>Celebrando 50 años de tradición y dulzura.</p>
+    <header class="header-principal">
+        <div class="logo-container">
+            <img src="imagenes/logo.png" alt="Logo Pastelería Mil Sabores" width="100">
+            <span>Pastelería Mil Sabores</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="carrito-icono">
+            <a href="carrito.html">🛒 Cart (<span id="contador-carrito">0</span>)</a>
+        </div>
+        <div class="enlaces-usuario">
+            <a href="login.html">Iniciar sesión</a> | <a href="registro.html">Registrar usuario</a>
+        </div>
     </header>
 
- <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="registro.html">Registro y Promociones</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section>
-            <h2>Nuestra Historia</h2>
-            <article>
-                <h3>Récord Guinness 1995</h3>
-                <p>Colaboramos en la creación de la torta más grande del mundo, un hito en la repostería chilena.</p>
-                <img src="imagenes/torta-gigante.jpeg" alt="Fotografía histórica del récord Guinness de 1995">
+        <section class="banner-principal">
+            <article class="info-tienda">
+                <h1>TIENDA ONLINE</h1>
+                <p>Nuestra pastelería ofrece las mejores tortas y postres tradicionales. Descubre nuestra historia y sabor.</p>
+                <a href="productos.html"><button>Ver productos</button></a>
+            </article>
+            <article class="imagen-destacada">
+                <!-- Imagen promocional central -->
+                <img src="imagenes/banner-tienda.jpg" alt="Imagen destacada de la tienda">
             </article>
         </section>
 
-        <section>
-            <h2>Conoce Nuestro Arte</h2>
-            <!-- Video embebido de muestra -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/wD-g_Gyn2I4" title="Video de preparación de tortas y postres" allowfullscreen></iframe>
+        <section class="grilla-productos-home">
+            <!-- Muestra de 4 productos según el mockup -->
+            <article class="producto-card">
+                <img src="imagenes/torta-chocolate.jpg" alt="Torta Cuadrada de Chocolate">
+                <h3>Torta Cuadrada de Chocolate</h3>
+                <p>Categoría: Tortas Cuadradas</p>
+                <strong>$45.000</strong>
+            </article>
+            <!-- Repetir article para más productos destacados -->
         </section>
     </main>
 
     <footer>
-        <p>Ubicación: Región Metropolitana, Chile</p>
-        <p>Impacto Comunitario: Apoyamos la formación de nuevos talentos en gastronomía.</p>
-        <p>&copy; 2026 Pastelería Mil Sabores.</p>
+        <p>&copy; 2026 Pastelería Mil Sabores - Región Metropolitana, Chile</p>
     </footer>
 </body>
 </html>

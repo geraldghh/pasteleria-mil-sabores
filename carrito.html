@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Pastelería Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-principal">
+        <div class="logo-container"><span>Pastelería Mil Sabores</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="carrito-icono">
+            <a href="carrito.html">🛒 Cart (<span id="contador-carrito">3</span>)</a>
+        </div>
+    </header>
+
+    <main class="contenedor-carrito">
+        <h1>Mi carrito de compras</h1>
+        
+        <section class="detalle-carrito">
+            <div class="lista-items" id="items-carrito">
+                <!-- Ejemplo estático basado en el mockup -->
+                <article class="item-carrito">
+                    <img src="imagenes/torta-chocolate.jpg" alt="Producto 1" width="100">
+                    <div class="info-item">
+                        <h3>Torta Cuadrada de Chocolate</h3>
+                        <p>Deliciosa torta de chocolate con capas de ganache.</p>
+                    </div>
+                    <div class="controles-cantidad">
+                        <strong>$45.000</strong>
+                        <button class="btn-restar">-</button>
+                        <input type="number" value="1" min="1" readonly>
+                        <button class="btn-sumar">+</button>
+                    </div>
+                </article>
+            </div>
+
+            <aside class="resumen-compra">
+                <h2>TOTAL: <span id="total-precio">$45.000</span></h2>
+                <form id="form-cupon">
+                    <input type="text" id="cupon" placeholder="Ingrese el cupón de descuento">
+                    <button type="button" id="btn-aplicar-cupon">APLICAR</button>
+                </form>
+                <button id="btn-pagar" style="background-color: green; color: white; width: 100%;">PAGAR</button>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pastelería Mil Sabores</p>
+    </footer>
+</body>
+</html>
