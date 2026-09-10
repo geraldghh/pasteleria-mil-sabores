@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Pastelería Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Únete a Nuestra Comunidad</h1>
+        <p>Accede a descuentos por edad y beneficios exclusivos para estudiantes.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="registro.html">Registro y Promociones</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulario de Inscripción</h2>
+            <form id="formularioRegistro" action="#" method="POST">
+                <article>
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </article>
+
+                <article>
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                    <small>Necesario para calcular tu descuento del 50% (mayores de 50 años).</small>
+                </article>
+
+                <article>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@duocuc.cl" required>
+                    <small>Usa tu correo institucional para recibir una torta gratis en tu cumpleaños.</small>
+                </article>
+
+                <article>
+                    <label for="codigoPromocional">Código Promocional:</label>
+                    <input type="text" id="codigoPromocional" name="codigoPromocional" placeholder="Ej: FELICES50">
+                </article>
+
+                <button type="submit">Crear Cuenta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>¿Dudas? Escríbenos a contacto@milsabores.cl</p>
+        <p>&copy; 2026 Pastelería Mil Sabores.</p>
+    </footer>
+
+    <!-- Script de validación (Etapa 4) -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+/* Importación de Google Fonts: Lato y Pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap');
+
+/* --- Estilos Generales --- */
+body {
+    /* Fondo Crema Pastel para un ambiente cálido y acogedor */
+    background-color: #FFF5E1; 
+    /* Fuente Lato para texto general y Marrón Oscuro para buen contraste */
+    font-family: 'Lato', sans-serif; 
+    color: #5D4037; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- Encabezados --- */
+h1, h2, h3 {
+    /* Fuente Pacifico para resaltar los títulos con un toque artístico */
+    font-family: 'Pacifico', cursive; 
+    color: #8B4513; /* Chocolate para acentos */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* --- Cabecera (Header) --- */
+header {
+    background-color: #FFC0CB; /* Rosa Suave */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #8B4513;
+}
+
+header img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #5D4037;
+}
+
+/* --- Navegación (Nav) --- */
+nav {
+    background-color: #8B4513; /* Chocolate */
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFF5E1; /* Crema Pastel */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFC0CB; /* Rosa Suave */
+}
+
+/* --- Contenido Principal (Main, Section, Article) --- */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+article {
+    margin-bottom: 15px;
+}
+
+/* Elementos de ayuda visual en formularios */
+small {
+    /* Gris Claro para descripciones y texto secundario */
+    color: #B0BEC5; 
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+/* --- Formularios --- */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #B0BEC5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* --- Botones --- */
+button {
+    background-color: #8B4513; /* Chocolate */
+    color: #FFF5E1; /* Crema */
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #FFC0CB; /* Rosa Suave */
+    color: #5D4037; /* Marrón Oscuro */
+}
+
+/* --- Pie de página (Footer) --- */
+footer {
+    background-color: #5D4037; /* Marrón Oscuro */
+    color: #FFF5E1; /* Crema */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* --- Multimedia --- */
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
