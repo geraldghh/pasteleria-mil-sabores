@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pastelería Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-principal">
+        <div class="logo-container">
+            <img src="imagenes/logo.jpg" alt="Logo Pastelería Mil Sabores" width="100">
+            <span>Pastelería Mil Sabores</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="carrito-icono">
+            <a href="carrito.html">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+        </div>
+        <div class="enlaces-usuario">
+            <a href="login.html">Iniciar sesión</a> | <a href="registro.html">Registrar usuario</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner-principal">
+            <article class="info-tienda">
+                <h2>50 AÑOS ENDULZANDO CHILE</h2>
+                <p>Desde 1976, Pastelería Mil Sabores celebra la repostería chilena con recetas tradicionales, ingredientes de calidad y mucho cariño. Recordada por participar en el récord Guinness de la torta más grande del mundo, hoy renovamos nuestra tienda online para llevar esa misma dulzura hasta tu puerta.</p>
+                <a href="productos.html" class="btn-enlace">+ Ver productos</a>
+            </article>
+            <article class="imagen-destacada">
+                <img src="imagenes/banner-tienda.jpg" alt="Vitrina de Pastelería Mil Sabores con tortas y postres">
+            </article>
+        </section>
+
+        <section>
+            <h2 class="texto-centrado">Nuestros Favoritos</h2>
+            <div class="grilla-productos-home" id="grilla-destacados">
+                <!-- Se completa dinámicamente desde script.js -->
+            </div>
+        </section>
+
+        <section id="impacto-comunitario">
+            <h2>Impacto Comunitario</h2>
+            <p>Cada compra que realizas en Pastelería Mil Sabores apoya directamente a estudiantes de gastronomía de Duoc UC, quienes participan en el desarrollo de nuevas recetas y en la formación de nuevos talentos de la repostería chilena. Así devolvemos a la comunidad parte de lo que nos ha dado durante estos 50 años.</p>
+        </section>
+
+        <section id="beneficios-registro">
+            <h2>Beneficios al registrarte</h2>
+            <p>🎂 Si tienes 50 años o más, obtienes un <strong>50% de descuento</strong> en todos nuestros productos.<br>
+            🎁 Usa el código <strong>FELICES50</strong> al registrarte y llévate un <strong>10% de descuento de por vida</strong>.<br>
+            🎓 ¿Eres estudiante Duoc? Regístrate con tu correo institucional y recibe una <strong>torta gratis en tu cumpleaños</strong>.</p>
+            <a href="registro.html" class="btn-enlace">Registrarme ahora</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pastelería Mil Sabores - Región Metropolitana, Chile</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

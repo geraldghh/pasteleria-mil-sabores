@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Producto - Pastelería Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-principal">
+        <div class="logo-container">
+            <img src="imagenes/logo.jpg" alt="Logo Pastelería Mil Sabores" width="60">
+            <span>Pastelería Mil Sabores</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="carrito-icono">
+            <a href="carrito.html">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+        </div>
+    </header>
+
+    <main>
+        <p class="breadcrumb"><a href="index.html">Home</a> &gt; <a href="productos.html" id="breadcrumb-categoria">Categoría</a> &gt; <span id="breadcrumb-nombre">Producto</span></p>
+
+        <section class="detalle-principal" id="detalle-producto-contenido">
+            <!-- Contenido generado dinámicamente desde script.js según el parámetro ?id= -->
+        </section>
+
+        <section class="productos-relacionados">
+            <h2>Productos Relacionados</h2>
+            <div class="grilla-relacionados" id="grilla-relacionados">
+                <!-- Se completa dinámicamente -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pastelería Mil Sabores</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

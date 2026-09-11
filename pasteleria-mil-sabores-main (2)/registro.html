@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Pastelería Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="contenedor-formulario">
+        <div class="texto-centrado" style="margin-bottom: 20px;">
+            <a href="index.html"><img src="imagenes/logo.jpg" alt="Logo" width="90"></a>
+            <h2>Registro de usuario</h2>
+        </div>
+        <form id="form-registro">
+            <label for="nombre">NOMBRE COMPLETO</label>
+            <input type="text" id="nombre" name="nombre" maxlength="100" required>
+
+            <label for="correo">CORREO</label>
+            <input type="email" id="correo" name="correo" maxlength="100" placeholder="Ej: usuario@duoc.cl" required>
+            <small>Solo se aceptan correos @duoc.cl, @profesor.duoc.cl o @gmail.com.</small>
+
+            <label for="confirmar-correo">CONFIRMAR CORREO</label>
+            <input type="email" id="confirmar-correo" name="confirmar-correo" maxlength="100" required>
+
+            <label for="contrasena">CONTRASEÑA</label>
+            <input type="password" id="contrasena" name="contrasena" minlength="4" maxlength="10" required>
+            <small>Entre 4 y 10 caracteres.</small>
+
+            <label for="confirmar-contrasena">CONFIRMAR CONTRASEÑA</label>
+            <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+
+            <label for="fecha-nacimiento">FECHA DE NACIMIENTO</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+            <small>Si tienes 50 años o más, obtienes automáticamente un 50% de descuento de por vida.</small>
+
+            <label for="codigo-promocional">CÓDIGO PROMOCIONAL (opcional)</label>
+            <input type="text" id="codigo-promocional" name="codigo-promocional" maxlength="20" placeholder="Ej: FELICES50">
+            <small>Usa el código FELICES50 para obtener un 10% de descuento de por vida.</small>
+
+            <label for="telefono">TELÉFONO (opcional)</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <div class="ubicacion">
+                <select id="region" name="region" required>
+                    <option value="">-- Seleccione la región --</option>
+                    <option value="RM">Región Metropolitana de Santiago</option>
+                </select>
+                <select id="comuna" name="comuna" required>
+                    <option value="">-- Seleccione la comuna --</option>
+                    <option value="Santiago">Santiago</option>
+                    <option value="Providencia">Providencia</option>
+                    <option value="Ñuñoa">Ñuñoa</option>
+                    <option value="Las Condes">Las Condes</option>
+                    <option value="Maipú">Maipú</option>
+                </select>
+            </div>
+
+            <button type="submit">REGISTRAR</button>
+        </form>
+        <p class="texto-centrado">¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

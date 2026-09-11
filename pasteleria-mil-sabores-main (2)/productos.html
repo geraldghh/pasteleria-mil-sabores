@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Pastelería Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-principal">
+        <div class="logo-container">
+            <img src="imagenes/logo.jpg" alt="Logo Pastelería Mil Sabores" width="60">
+            <span>Pastelería Mil Sabores</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="carrito-icono">
+            <a href="carrito.html">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="texto-centrado">Nuestros Productos</h1>
+        <p class="texto-centrado">Explora nuestras 8 categorías de repostería, desde tortas tradicionales hasta opciones sin azúcar, sin gluten y veganas.</p>
+
+        <section class="filtros-catalogo">
+            <label for="filtro-categoria">Categoría:
+                <select id="filtro-categoria">
+                    <option value="todas">Todas las categorías</option>
+                    <option value="cuadradas">Tortas Cuadradas</option>
+                    <option value="circulares">Tortas Circulares</option>
+                    <option value="individuales">Postres Individuales</option>
+                    <option value="sin_azucar">Productos Sin Azúcar</option>
+                    <option value="tradicional">Pastelería Tradicional</option>
+                    <option value="sin_gluten">Productos Sin Gluten</option>
+                    <option value="vegana">Productos Veganos</option>
+                    <option value="especiales">Tortas Especiales</option>
+                </select>
+            </label>
+            <label for="buscador-productos">Buscar:
+                <input type="search" id="buscador-productos" placeholder="Ej: chocolate, torta, vegana...">
+            </label>
+        </section>
+
+        <section class="grilla-productos-completa" id="contenedor-productos">
+            <!-- El catálogo completo se genera dinámicamente desde script.js -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pastelería Mil Sabores</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

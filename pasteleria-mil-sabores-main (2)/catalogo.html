@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Pastelería Mil Sabores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="header-principal">
+    <div class="logo-container">
+        <img src="imagenes/logo.jpg" alt="Logo Pastelería Mil Sabores" width="60">
+        <span>Pastelería Mil Sabores</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="carrito-icono">
+        <a href="carrito.html">🛒 Carrito (<span class="contador-carrito">0</span>)</a>
+    </div>
+</header>
+
+    <main>
+        <!-- Sección de Origen (Requerimiento de Información Extra) -->
+        <section id="origen-productos">
+            <h2>Origen de Nuestros Productos</h2>
+            <p>Nuestras recetas tradicionales mantienen la esencia de la repostería chilena, utilizando ingredientes locales de alta calidad para honrar nuestros 50 años de historia. Cada categoría de nuestro catálogo responde a una necesidad distinta: desde la celebración clásica hasta opciones sin azúcar, sin gluten y veganas, para que todos puedan disfrutar de un buen postre.</p>
+        </section>
+
+        <!-- Filtros de Búsqueda Avanzada -->
+        <section id="filtros">
+            <h2>Filtros de Búsqueda</h2>
+            <form id="formFiltros">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="todas">Todas las Categorías</option>
+                    <option value="cuadradas">Tortas Cuadradas</option>
+                    <option value="circulares">Tortas Circulares</option>
+                    <option value="individuales">Postres Individuales</option>
+                    <option value="sin_azucar">Productos Sin Azúcar</option>
+                    <option value="tradicional">Pastelería Tradicional</option>
+                    <option value="sin_gluten">Productos Sin Gluten</option>
+                    <option value="vegana">Productos Veganos</option>
+                    <option value="especiales">Tortas Especiales</option>
+                </select>
+                <button type="button">Aplicar Filtros</button>
+            </form>
+        </section>
+
+        <!-- Catálogo Extenso de Productos -->
+        <section id="lista-productos">
+            <h2>Nuestras Delicias</h2>
+
+            <h3 class="titulo-subcategoria">Tortas Cuadradas</h3>
+
+            <article class="producto" data-categoria="cuadradas">
+                <img src="imagenes/torta-chocolate.jpg" alt="Torta Cuadrada de Chocolate" width="160">
+                <div class="info-producto-cat">
+                    <h3>Torta Cuadrada de Chocolate (TC001)</h3>
+                    <p>Deliciosa torta de chocolate con capas de ganache y un toque de avellanas. Personalizable con mensajes especiales.</p>
+                    <strong>Precio: $45.000 CLP</strong>
+                <label>Mensaje personalizado: <input type="text" placeholder="Ej: Feliz Cumpleaños"></label>
+                    <button class="btn-anadir" data-id="TC001">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-categoria="cuadradas">
+                <img src="imagenes/torta-cuadrada-frutas.jpg" alt="Torta Cuadrada de Frutas" width="160">
+                <div class="info-producto-cat">
+                    <h3>Torta Cuadrada de Frutas (TC002)</h3>
+                    <p>Una mezcla de frutas frescas y crema chantilly sobre un suave bizcocho de vainilla, ideal para celebraciones.</p>
+                    <strong>Precio: $50.000 CLP</strong>
+                <label>Mensaje personalizado: <input type="text" placeholder="Ej: Feliz Cumpleaños"></label>
+                    <button class="btn-anadir" data-id="TC002">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <h3 class="titulo-subcategoria">Tortas Circulares</h3>
+
+            <article class="producto" data-categoria="circulares">
+                <img src="imagenes/torta-circular-vainilla.jpg" alt="Torta Circular de Vainilla" width="160">
+                <div class="info-producto-cat">
+                    <h3>Torta Circular de Vainilla (TT001)</h3>
+                    <p>Bizcocho de vainilla clásico relleno con crema pastelera y cubierto con un glaseado dulce, perfecto para cualquier ocasión.</p>
+                    <strong>Precio: $40.000 CLP</strong>
+                <label>Mensaje personalizado: <input type="text" placeholder="Ej: Feliz Cumpleaños"></label>
+                    <button class="btn-anadir" data-id="TT001">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-categoria="circulares">
+                <img src="imagenes/torta-circular-manjar.jpg" alt="Torta Circular de Manjar" width="160">
+                <div class="info-producto-cat">
+                    <h3>Torta Circular de Manjar (TT002)</h3>
+                    <p>Torta tradicional chilena con manjar y nueces, un deleite para los amantes de los sabores dulces y clásicos.</p>
+                    <strong>Precio: $42.000 CLP</strong>
+                <label>Mensaje personalizado: <input type="text" placeholder="Ej: Feliz Cumpleaños"></label>
+                    <button class="btn-anadir" data-id="TT002">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <h3 class="titulo-subcategoria">Postres Individuales</h3>
+
+            <article class="producto" data-categoria="individuales">
+                <img src="imagenes/mousse-chocolate.jpg" alt="Mousse de Chocolate" width="160">
+                <div class="info-producto-cat">
+                    <h3>Mousse de Chocolate (PI001)</h3>
+                    <p>Postre individual cremoso y suave, hecho con chocolate de alta calidad, ideal para los amantes del chocolate.</p>
+                    <strong>Precio: $5.000 CLP</strong>
+                    <button class="btn-anadir" data-id="PI001">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-categoria="individuales">
+                <img src="imagenes/tiramisu-clasico.jpg" alt="Tiramisú Clásico" width="160">
+                <div class="info-producto-cat">
+                    <h3>Tiramisú Clásico (PI002)</h3>
+                    <p>Un postre italiano individual con capas de café, mascarpone y cacao, perfecto para finalizar cualquier comida.</p>
+                    <strong>Precio: $5.500 CLP</strong>
+                    <button class="btn-anadir" data-id="PI002">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <h3 class="titulo-subcategoria">Productos Sin Azúcar</h3>
+
+            <article class="producto" data-categoria="sin_azucar">
+                <img src="imagenes/torta-naranja-sinazucar.png" alt="Torta Sin Azúcar de Naranja" width="160">
+                <div class="info-producto-cat">
+                    <h3>Torta Sin Azúcar de Naranja (PSA001)</h3>
+                    <p>Torta ligera y deliciosa, endulzada naturalmente, ideal para quienes buscan opciones más saludables.</p>
+                    <strong>Precio: $48.000 CLP</strong>
+                <label>Mensaje personalizado: <input type="text" placeholder="Ej: Feliz Cumpleaños"></label>
+                    <button class="btn-anadir" data-id="PSA001">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-categoria="sin_azucar">
+                <img src="imagenes/cheesecake-sinazucar.jpg" alt="Cheesecake Sin Azúcar" width="160">
+                <div class="info-producto-cat">
+                    <h3>Cheesecake Sin Azúcar (PSA002)</h3>
+                    <p>Suave y cremoso, este cheesecake es una opción perfecta para disfrutar sin culpa.</p>
+                    <strong>Precio: $47.000 CLP</strong>
+                    <button class="btn-anadir" data-id="PSA002">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <h3 class="titulo-subcategoria">Pastelería Tradicional</h3>
+
+            <article class="producto" data-categoria="tradicional">
+                <img src="imagenes/empanada-manzana.svg" alt="Empanada de Manzana" width="160">
+                <div class="info-producto-cat">
+                    <h3>Empanada de Manzana (PT001)</h3>
+                    <p>Pastelería tradicional rellena de manzanas especiadas, perfecta para un dulce desayuno o merienda.</p>
+                    <strong>Precio: $3.000 CLP</strong>
+                    <button class="btn-anadir" data-id="PT001">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-categoria="tradicional">
+                <img src="imagenes/tarta-santiago.jpg" alt="Tarta de Santiago" width="160">
+                <div class="info-producto-cat">
+                    <h3>Tarta de Santiago (PT002)</h3>
+                    <p>Tradicional tarta española hecha con almendras, azúcar, y huevos, una delicia para los amantes de los postres clásicos.</p>
+                    <strong>Precio: $6.000 CLP</strong>
+                    <button class="btn-anadir" data-id="PT002">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <h3 class="titulo-subcategoria">Productos Sin Gluten</h3>
+
+            <article class="producto" data-categoria="sin_gluten">
+                <img src="imagenes/brownie-singluten.jpg" alt="Brownie Sin Gluten" width="160">
+                <div class="info-producto-cat">
+                    <h3>Brownie Sin Gluten (PG001)</h3>
+                    <p>Rico y denso, este brownie es perfecto para quienes necesitan evitar el gluten sin sacrificar el sabor.</p>
+                    <strong>Precio: $4.000 CLP</strong>
+                    <button class="btn-anadir" data-id="PG001">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-categoria="sin_gluten">
+                <img src="imagenes/pan-singluten.jpg" alt="Pan Sin Gluten" width="160">
+                <div class="info-producto-cat">
+                    <h3>Pan Sin Gluten (PG002)</h3>
+                    <p>Suave y esponjoso, ideal para sándwiches o para acompañar cualquier comida.</p>
+                    <strong>Precio: $3.500 CLP</strong>
+                    <button class="btn-anadir" data-id="PG002">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <h3 class="titulo-subcategoria">Productos Veganos</h3>
+
+            <article class="producto" data-categoria="vegana">
+                <img src="imagenes/torta-vegana-chocolate.png" alt="Torta Vegana de Chocolate" width="160">
+                <div class="info-producto-cat">
+                    <h3>Torta Vegana de Chocolate (PV001)</h3>
+                    <p>Torta de chocolate húmeda y deliciosa, hecha sin productos de origen animal, perfecta para veganos.</p>
+                    <strong>Precio: $50.000 CLP</strong>
+                <label>Mensaje personalizado: <input type="text" placeholder="Ej: Feliz Cumpleaños"></label>
+                    <button class="btn-anadir" data-id="PV001">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-categoria="vegana">
+                <img src="imagenes/galletas-veganas-avena.jpg" alt="Galletas Veganas de Avena" width="160">
+                <div class="info-producto-cat">
+                    <h3>Galletas Veganas de Avena (PV002)</h3>
+                    <p>Crujientes y sabrosas, estas galletas son una excelente opción para un snack saludable y vegano.</p>
+                    <strong>Precio: $4.500 CLP</strong>
+                    <button class="btn-anadir" data-id="PV002">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <h3 class="titulo-subcategoria">Tortas Especiales</h3>
+
+            <article class="producto" data-categoria="especiales">
+                <img src="imagenes/torta-cumpleanos-especial.png" alt="Torta Especial de Cumpleaños" width="160">
+                <div class="info-producto-cat">
+                    <h3>Torta Especial de Cumpleaños (TE001)</h3>
+                    <p>Diseñada especialmente para celebraciones, personalizable con decoraciones y mensajes únicos.</p>
+                    <strong>Precio: $55.000 CLP</strong>
+                <label>Mensaje personalizado: <input type="text" placeholder="Ej: Feliz Cumpleaños"></label>
+                    <button class="btn-anadir" data-id="TE001">Agregar al Carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-categoria="especiales">
+                <img src="imagenes/torta-boda-especial.jpg" alt="Torta Especial de Boda" width="160">
+                <div class="info-producto-cat">
+                    <h3>Torta Especial de Boda (TE002)</h3>
+                    <p>Elegante y deliciosa, esta torta está diseñada para ser el centro de atención en cualquier boda.</p>
+                    <strong>Precio: $60.000 CLP</strong>
+                <label>Mensaje personalizado: <input type="text" placeholder="Ej: Feliz Cumpleaños"></label>
+                    <button class="btn-anadir" data-id="TE002">Agregar al Carrito</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ubicación: Región Metropolitana, Chile</p>
+        <p>Impacto Comunitario: Al comprar con nosotros, apoyas directamente a los estudiantes de gastronomía de Duoc UC y a la comunidad local.</p>
+        <p>&copy; 2026 Pastelería Mil Sabores. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
